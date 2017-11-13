@@ -81,22 +81,29 @@ span.menu{
 	position: relative;  
     font-family: 'Open Sans', sans-serif;
 }
-.link-effect-3 a::before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-	padding: 10px 0;
-	max-width: 0;
-	border-bottom: 3px solid #00a78e;
+/*.link-effect-3 a::before {*/
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*left: 0;*/
+	/*overflow: hidden;*/
+	/*padding: 10px 0;*/
+	/*max-width: 0;*/
+	/*border-bottom: 3px solid #00a78e;*/
+    /*color: #00a78e;*/
+	/*content: attr(data-hover);*/
+	/*-webkit-transition: max-width 0.5s;*/
+	/*-moz-transition: max-width 0.5s;*/
+	/*transition: max-width 0.5s;*/
+/*}*/
+/*.link-effect-3 a:hover::before {*/
+	/*max-width: 100%;*/
+/*}*/
+
+
+.link-effect-3 a:hover{
+    border-bottom: 3px solid #00a78e;
     color: #00a78e;
-	content: attr(data-hover);
-	-webkit-transition: max-width 0.5s;
-	-moz-transition: max-width 0.5s;
-	transition: max-width 0.5s;
-}
-.link-effect-3 a:hover::before {
-	max-width: 100%;
+    font-weight: 700;
 }
 /*--banner-info--*/
 .banner-info {
@@ -861,7 +868,7 @@ ul.year li:nth-child(5){
 }
 /*-- feedback --*/
 .feedback{
-	background: url(../images/feedback-bg.jpg) no-repeat 0px 0px;
+	/*background: url(../images/feedback-bg.jpg) no-repeat 0px 0px;*/
 	background-size: cover;
 	min-height: 300px;
 	padding: 6em 0 0 0;
@@ -1029,8 +1036,8 @@ div#portfolioModal1,div#portfolioModal2,div#portfolioModal3,div#portfolioModal4,
     position: absolute;
     top: 25px;
     right: 25px;
-   width: 45px;
-    height: 45px
+    width: 45px;
+    height: 45px;
     background-color: transparent;
     cursor: pointer;
     z-index: 1;
